@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body 
+{
+ padding: 0; 
+ margin: 0;
+ font-family: 'Montserrat', sans-serif;
+ background: #303131;
+  color: #f8dba8 ;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+} 
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+canvas {
+   vertical-align: center;
+   box-shadow: 0 0 100px 20px rgba(0,0,0,0.5);
+} 
+#props{
+  position: absolute;
+  bottom: -90%;
+  right: 25%;
+
+}
+
+.para p{
+  width: 35ch;
+  align-self: flex-start;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+  line-height: 130%;
+}
+.main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+h1{
+  font-size: 2.5em;
+  color: white;
+  font-weight: 900;
+
+}
+.main p{
+  padding: 30px;
+  width: 38ch;
+  color: #e1e1e1c9;
+  letter-spacing: 13%;
+  line-height: 159%;
+  margin: 1em;
+  margin-top: 0;
+}
+.go{
+  border:none;
+  padding: 0.6em 2em;
+  font-size: 1.2em;
+  letter-spacing: 30%;
+  cursor: pointer;
+  background:#FBC661;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background: rgb(40, 167, 71);
+    color: rgb(255, 255, 255);
+  }
+}
+.evolve{
+  object-fit: cover;
+  position: absolute;
+  bottom: -15%;
+  right: 50%;
+  width:1000px;
+  transform: translate(75%,0%);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.t1{
+  position: absolute;
+width: 60px;
+height: 60px;
+left: 50%;
+top: 200px;
+
+border: 7px solid #484848;
+z-index: -1;
+transform: rotate(-18.41deg);
+}
+.t2{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 0;
+  
+  border: 7px solid #484848;
+  z-index: -1;
+  transform: rotate(18.41deg);
+}
+.t3{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  left: 0;
+  z-index: -1;
+  border: 7px solid #484848;
+  
+  transform: rotate(40.41deg);
+}

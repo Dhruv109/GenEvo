@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>StarField_p5.js</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+    <script type="text/javascript" src="animal.js"></script>
+    <script type="text/javascript" src="food.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+ 
+
+   
+  </head>
+  <body>
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+<section>
+   <div class="main">
+     <h1>Welcome to the <span style='color:#FBC661'>evolution</span>.</h1>
+     <p>You are going to see a genetic evolution simulation where the ‘things’ fight for food and try to stay away from poison.</p>
+     <button class='go'><a href="#section2">LET'S GO</button>
+     <img class = 'evolve' src="evolve.png" alt="">
+   </div>
+  </section>
+    <section id="section2">
+    <div class="container">
+      <div class="para">   <p>This is a simulation of genetic evolution. Green dots are food and red dots are poison. The redder they are, the faster they are. Being fast means they have to spend a shitload of energy which kills them. As dying is not fun they have to strike a balance. </p>
+   <p>
+    Also, by clicking on <span style = 'color:wheat';>properties</span> you can see their food sensing and poison sensing radius. The bigger they are the more energy they spend.
+   </p>
+  </div>
+
+   <div id="canvas"></div>
+  </div>
+</section>
+  </body>
+</html>
